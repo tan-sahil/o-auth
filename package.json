@@ -1,0 +1,19 @@
+{
+  "name": "o-auth",
+  "version": "1.0.0",
+  "description": "\"oauth adding \"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tan-sahil/o-auth.git"
+  },
+  "author": "\"sahil\"",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tan-sahil/o-auth/issues"
+  },
+  "homepage": "https://github.com/tan-sahil/o-auth#readme"
+}
