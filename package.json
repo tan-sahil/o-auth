@@ -4,16 +4,26 @@
   "description": "\"oauth adding \"",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tan-sahil/o-auth.git"
   },
-  "author": "\"sahil\"",
+  "author": "sahil",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tan-sahil/o-auth/issues"
   },
-  "homepage": "https://github.com/tan-sahil/o-auth#readme"
+  "homepage": "https://github.com/tan-sahil/o-auth#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
