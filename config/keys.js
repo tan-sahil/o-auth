@@ -7,6 +7,9 @@ module.exports = {
     },
     mongoDb :{
         MONGO_URI : "mongodb+srv://o-auth:o-auth@o-authcluster.vdtvg4k.mongodb.net/?retryWrites=true&w=majority"
+    },
+    cookie: {
+        sessionKey: "learningandgrowing"
     }
 
 }
