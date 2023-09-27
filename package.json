@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tan-sahil/o-auth#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "mongoose": "^7.5.3",

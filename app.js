@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 const passportSetup = require("./config/passportSetup");
+const dotenv = require("dotenv").config();
 const db = require("./config/db");
   db();  
 const router = require("./routes/authRoute");
