@@ -1,4 +1,8 @@
 # o-auth
+<<<<<<< HEAD
+=======
+
+>>>>>>> aa260dd1aabf4142a93f1a50cce4f3923e087622
 by using passport , added googlr authentication and github authemtication 
 
 
