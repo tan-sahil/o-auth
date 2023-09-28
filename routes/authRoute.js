@@ -34,7 +34,7 @@ router.get('/github', passport.authenticate('github', {
 //redirect handeling
 // here passport.authenticate will work differently since it will have params sent by git to it.
 router.get('/github/redirect', passport.authenticate('github'), (req, res) =>{
-    res.send("redirected by github authentication")
+    res.redirect('/profile/')
 })
 
 module.exports  = router;
