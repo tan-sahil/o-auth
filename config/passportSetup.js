@@ -41,3 +41,35 @@ passport.use( new GoogleStrategy({
     })
    
 }))
+
+
+//github strategy
+
+
+const GitHubStrategy = require("passport-github2").Strategy;
+
+passport.use(new GitHubStrategy ({
+    callbackURL : "/auth/github/redirect",
+    clientID : keys.git.clientID,
+    clientSecret : keys.git.clientSecret
+}, (acessToken, refreshToken, profile, done) =>{
+    // call back function
+    //checking is user already registered
+     User.findOne({gitId : profile.id}).then((currentUser) =>{
+        if(currentUser){
+            done(null, currentUser)
+            console.log("already registerd ", currentUser)
+         }else{
+             new User({
+                username : profile.username,
+                gitId : profile.id,
+                profileUrl: profile.profileUrl,
+                photos : profile.photos[0].value
+            }).save().then((newUser) => {
+                done(null, newUser)
+                console.log(newUser)}).catch(err => console.log(err))
+            
+        }
+    })
+   
+}))

@@ -4,7 +4,10 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     username : String,
-    googleId : String
+    googleId : String,
+    gitId : String,
+    profileUrl: String,
+    photos : String
 })
 
 const User = mongoose.model("user", userSchema);

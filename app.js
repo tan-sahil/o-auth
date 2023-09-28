@@ -26,7 +26,7 @@ app.use(passport.session());
 app.use("/auth" , authRouter);
 app.use("/profile", profileRouter);
 app.get("/", (req, res) =>{
-    res.render('home')
+    res.render('home', {user : req.user})
 })
 
 app.listen(5000, ()=> console.log(`listing at the port number 5000 .....`))

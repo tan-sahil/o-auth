@@ -10,6 +10,10 @@ module.exports = {
     },
     cookie: {
         sessionKey: "learningandgrowing"
+    },
+    git: {
+        clientID: "a102e77aa070aa6513ca",
+        clientSecret: "57ea55a5cd448817d04fa68cc1528ee5e269c410"
     }
 
 }
